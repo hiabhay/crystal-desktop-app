@@ -60,7 +60,7 @@ const Navbar = () => {
             </p>
             <img src={home} className="pt-0" alt="Home" />
             <p className="text-xs font-normal text-white pd-2 pl-2 pr-8">
-              Address: 1/1 Awas Crystal, Road No. 1, Contractors Area, Bistupur,
+              1/1 Awas Crystal, Road No. 1, Contractors Area, Bistupur,
               Jamshedpur-831001 Jharkhand
             </p>
           </div>

@@ -3,6 +3,7 @@ import { Tilt } from "react-tilt";
 import mapYellow from "../assets/mapYellow.svg";
 import phoneYellow from "../assets/phoneYellow.svg";
 import mailYellow from "../assets/mailYellow.svg";
+import globe from '../assets/globe.png'
 
 const HeadOffice = () => {
   return (
@@ -36,6 +37,14 @@ const HeadOffice = () => {
             <img src={phoneYellow} className="mr-4" />
             <div className="text-zinc-500 text-lg font-normal leading-normal">
               +91 9556793910
+            </div>
+          </div>
+        </div>
+        <div className="flex pt-10 pl-10">
+          <div className="flex items-start">
+            <img src={globe} className="mr-4" />
+            <div className="text-zinc-500 text-lg font-normal leading-normal">
+            www.crystalfasteners.com
             </div>
           </div>
         </div>

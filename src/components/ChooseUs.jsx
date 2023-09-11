@@ -4,6 +4,7 @@ import Nails from "../assets/Nails.png";
 import Fencing from "../assets/Fencing.png";
 import Fasteners from "../assets/Fasteners.png";
 import Power from "../assets/Power.png";
+import BulkNails from '../assets/BulkNails.png'
 import ChooseUsCard from "./ChooseUsCard";
 import Section from "./Section";
 
@@ -34,13 +35,13 @@ const ChooseUs = () => {
         </div>
         <div className="flex group pl-4 pt-8 justify-center sm:flex-col sm:pl-0 sm:ml-0 sm:mr-12">
         
-          <ChooseUsCard img={Nails} title="Collated Nails" />
+          <ChooseUsCard img={BulkNails} title="Collated Nails"/>
 
-          <ChooseUsCard img={Fencing} title="Fencing" />
+          <ChooseUsCard img={Nails} title="Bulk Nails" />
+
+          <ChooseUsCard img={Fencing} title="Fencing"/>
 
           <ChooseUsCard img={Fasteners} title="Fasteners"/>
-
-          <ChooseUsCard img={Power} title="Hand Driven Nails"/>
         </div>
         <div className="flex pl-14 pt-8 sm:p-0"></div>
       </div>

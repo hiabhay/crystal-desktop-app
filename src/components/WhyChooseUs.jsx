@@ -11,7 +11,7 @@ const WhyChooseUs = () => {
 
   return (
     <>
-      <div className="flex pb-16 justify-center sm:flex-col">
+      <div className="flex pb-16 justify-center sm:flex-col md:flex-col">
         <div>
           <div
             className="text-neutral-800 text-[40px] font-medium leading-[60px] pt-16 pl-10 sm:text-2xl sm:pl-4"
@@ -21,10 +21,11 @@ const WhyChooseUs = () => {
           </div>
           <div className="w-[80px] sm:w-[40px] h-1 bg-amber-300 rounded-[32px] ml-10 mt-2 sm:ml-4" />
         </div>
+        
         <div className="pt-10 pl-10 sm:flex-col sm:pl-4">
           <div className="flex sm:flex-col">
             <div className="pr-4 sm:pr-0">
-              <div className="w-[380px] h-[230px] relative group overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="w-[380px] sm:w-[340px] h-[230px] relative group overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="mt-10 ml-6 pt-2 sm:mt-12">
                   <img src={group} className="w-[2rem]"/>
                 </div>
@@ -42,8 +43,8 @@ const WhyChooseUs = () => {
               </div>
             </div>
 
-            <div className="pr-4 sm:pr-0 sm:mt-8">
-              <div className="w-[380px] h-[230px] relative group overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="pr-4 sm:pr-0 sm:mt-4">
+              <div className="w-[380px] sm:w-[340px] h-[230px] relative group overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="mt-10 ml-6 pt-2 sm:mt-12">
                   <img src={chip} className="w-[2rem]" />
                 </div>
@@ -61,9 +62,9 @@ const WhyChooseUs = () => {
             </div>
           </div>
 
-          <div className="flex pt-4 sm:flex-col sm:w-fit">
-            <div className="pr-4 sm:w-fit">
-              <div className="w-[380px] h-[230px] relative group overflow-hidden hover:shadow-xl transition-shadow">
+          <div className="flex pt-4 sm:flex-col">
+            <div className="pr-4">
+              <div className="w-[380px] sm:w-[340px] h-[230px] relative group overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="mt-10 ml-6 pt-2 sm:mt-12">
                   <img src={mailC} className="w-[2rem]"/>
                 </div>
@@ -81,8 +82,8 @@ const WhyChooseUs = () => {
               </div>
             </div>
             
-            <div className="pr-4 sm:pt-4 sm:w-fit">
-              <div className="w-[380px] h-[230px] relative group overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="pr-4 sm:pt-4">
+              <div className="w-[380px] sm:w-[340px] h-[230px] relative group overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="mt-10 ml-6 pt-2 sm:mt-12">
                   <img src={headphone} className="w-[2rem]"/>
                 </div>
@@ -101,6 +102,8 @@ const WhyChooseUs = () => {
 
           </div>
         </div>
+
+
       </div>
     </>
   );

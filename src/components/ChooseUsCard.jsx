@@ -18,7 +18,7 @@ const ChooseUsCard = ({ title, img }) => {
         <div class="max-w-[300px] max-h-[300px] overflow-hidden">
           <img
             src={img}
-            class="hover:scale-125 transition duration-500 object-cover"
+            class="hover:scale-125 transition duration-500 object-cover w-[240px]"
           />
         </div>
         <div className="text-white text-[28px] font-medium leading-[39.20px] tracking-wide mt-2 sm:text-sm">

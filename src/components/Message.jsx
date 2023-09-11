@@ -17,12 +17,12 @@ const Message = () => {
         <div className="bg-zinc-100 pb-20">
           <div className="sm:justify-center sm:text-center">
             <div
-              className="text-neutral-800 text-[40px] font-medium leading-[60px] pt-16 pl-16 flex sm:flex-col sm:pl-4 sm:justify-center sm:text-[30px] sm:text-center"
+              className="text-neutral-800 text-[40px] font-medium leading-[60px] pt-16 pl-16 flex sm:flex-col sm:pl-0 sm:justify-center sm:text-[30px] sm:text-center"
               style={fontFam}
             >
               <div className="pl-2 sm:pl-0">
                 Drop us message
-                <div className="text-stone-500 text-base font-light leading-7">
+                <div className="text-stone-500 text-base font-light leading-7 sm:mr-2">
                   Get in touch with us for your wire requirements
                 </div>
                 <div className="w-[86px] h-1 bg-amber-300 rounded-[32px] mt-4 sm:hidden" />
@@ -33,7 +33,7 @@ const Message = () => {
                   <Form />
                 </form>
               </div>
-              <div className="sm:hidden">
+              <div className="sm:hidden md:hidden">
                 <HeadOffice />
               </div>
             </div>

@@ -4,7 +4,7 @@ const Form = () => {
   return (
     <div className="w-full max-w-md mx-auto p-4 bg-zinc-100 sm:pl-8 sm:text-center">
       <div className="flex mb-4 sm:flex-col">
-        <div className="w-1/2 mr-2 sm:w-full">
+        <div className="w-1/2 mr-2 sm:w-full sm:mr-0">
           <label className="block mb-1 text-xs sm:text-left" htmlFor="firstName">
             First Name
           </label>
