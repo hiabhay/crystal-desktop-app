@@ -20,7 +20,7 @@ const ProgressBar1 = ({ className, isMouseEnter }) => {
 
   return (
     <div
-      className={`${className} relative h-[1px] mt-2 bg-black transition-all ease-out duration-500 group-hover:bg-amber-300`}
+      className={`${className} h-[1px] mt-2 bg-black transition-all ease-out duration-500 group-hover:bg-amber-300`}
       style={{ width: `${customWidth}%` }}
     ></div>
   );

@@ -51,8 +51,9 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${visible ? "" : "hidden"}`}>
       <Section>
+        {/* upper section of navbar */}
         <div className="flex items-start pt-2">
-          <div className="flex justify-start pl-12">
+          <div className="flex justify-start pl-12 sm:hidden">
             <img src={mail} className="pt-0" alt="Mail" />
             <p className="text-xs font-normal text-white pd-2 pl-2 pr-8">
               crystal.fastener@gmail.com
@@ -63,7 +64,7 @@ const Navbar = () => {
               Jamshedpur-831001 Jharkhand
             </p>
           </div>
-          <div className="flex pt-0flex flex-grow justify-end pr-12 pt-0">
+          <div className="flex pt-0flex flex-grow justify-end pr-12 pt-0 sm:justify-center sm:text-center">
             <button>
               <img src={facebook} className="pr-4" alt="Facebook" />
             </button>
@@ -75,12 +76,16 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <hr className="border-t border-gray-100 my-4 mx-12" />
+
+        <hr className="border-t border-gray-100 my-4 mx-12 sm:w-40" />
+
+        {/* lower section of navbar including buttons and logo */}
+
         <div className="flex">
-          <Link to="/">
+          <Link to="/" className="sm:left-0">
             <img src={crystal} className="pl-10" alt="Logo" />
           </Link>
-          <div className="text-white flex pt-0flex flex-grow justify-end pr-12 pt-0">
+          <div className="text-white flex pt-0flex flex-grow justify-end pr-12 pt-0 sm:flex-col">
             <button>
               <Link
                 to="/"
@@ -112,7 +117,7 @@ const Navbar = () => {
               </Link>
             </button>
 
-            <div className="relative pt-3 pl-4 hover:text-amber-300">
+            <div className="relative pt-3 pl-4 hover:text-amber-300 sm:pl-56 sm:pt-0">
               <button onClick={toggleDropdown}>
                 <Link
                   className={`${
@@ -153,9 +158,14 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+
+
       </Section>
     </nav>
   );
 };
 
 export default Navbar;
+
+
+

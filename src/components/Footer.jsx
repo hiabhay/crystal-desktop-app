@@ -8,16 +8,17 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="bg-gray-800 flex pb-32 justify-center items-center">
-        <div className="pt-8 pl-8">
-          <img src={crystal} />
-          <div className="w-[364px] text-zinc-500 text-sm font-normal leading-[21px] tracking-tight pt-4">
+      <div className="bg-gray-800 flex pb-28 justify-center items-center sm:flex-col">
+      <div className="flex sm:flex-col">
+        <div className="pt-8 pl-8 sm:flex-col">
+          <img src={crystal} className="sm:w-1/2" />
+          <div className="w-[364px] text-zinc-500 text-sm font-normal leading-[21px] tracking-tight pt-4 sm:pr-8">
             Bring to the table win-win survival strategies to ensure proactive
             domination. At the end of the day, going forward, a new normal that
             has evolved from generation X is on the runway.
           </div>
         </div>
-        <div className="pt-12 pl-20">
+        <div className="pt-12 pl-20 sm:pl-8">
           <div className="w-[127px] h-[157px] flex-col justify-start items-start gap-[34px] inline-flex">
             <div className="text-white text-xl font-semibold leading-[25px] flex">
               Links
@@ -34,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="pt-12 pl-20">
+        <div className="pt-12 pl-20 sm:pt-24 sm:pl-8">
           <div className="w-[140px] h-[157px] flex-col justify-start items-start gap-[34px] inline-flex">
             <div className="text-white text-xl font-semibold leading-[25px] flex">
               Other Links
@@ -52,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="pt-20 pl-20">
+        <div className="pt-12 pl-20 sm:pt-24 sm:pl-8">
           <div className="w-[242px] h-[189px] relative">
             <div className="left-0 top-0 absolute text-white text-xl font-semibold leading-[25px] flex">
               Get in touch
@@ -65,7 +66,7 @@ const Footer = () => {
               </div>
               <div className="pt-4">Phone: +91 9556793910</div>
               <div className="pt-4">Email: crystal.fastener@gmail.com</div>
-              <div className="flex">
+              <div className="flex sm:mt-4 sm:mb-8">
                 <div className="pt-4">
                   <button>
                     <div className="p-[9.33px] rounded-3xl border border-white flex-col justify-center items-center gap-[6.67px] inline-flex">
@@ -98,6 +99,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

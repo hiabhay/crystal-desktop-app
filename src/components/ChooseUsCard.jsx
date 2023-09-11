@@ -14,14 +14,14 @@ const ChooseUsCard = ({ title, img }) => {
         setIsMouseEnter(false);
       }}
     >
-      <div class="max-w-[400px] overflow-hidden">
+      <div class="max-w-[400px] overflow-hidden sm:ml-0 sm:pl-0">
         <div class="max-w-[300px] max-h-[300px] overflow-hidden">
           <img
             src={img}
             class="hover:scale-125 transition duration-500 object-cover"
           />
         </div>
-        <div className="text-white text-[28px] font-medium leading-[39.20px] tracking-wide mt-2">
+        <div className="text-white text-[28px] font-medium leading-[39.20px] tracking-wide mt-2 sm:text-sm">
           {title}
         </div>
         <ProgressBar isMouseEnter={isMouseEnter} />
