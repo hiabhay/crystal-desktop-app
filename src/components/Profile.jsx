@@ -1,5 +1,5 @@
 import React from "react";
-import CompanyProfileImg1 from "../assets/CompanyProfileImg1.png";
+import AboutNew from "../assets/AboutNew.png";
 import CompanyProfileImg2 from "../assets/CompanyProfileImg2.png";
 
 const Profile = () => {
@@ -55,7 +55,7 @@ const Profile = () => {
         <div className="pl-12 sm:pl-0 sm:pt-8 sm:mr-4">
           <div className="relative">
             <div className="w-[426px] h-[374px] border-2 border-amber-300 absolute top-8 left-8 z-10 sm:hidden" />
-            <img src={CompanyProfileImg1} className="z-10 relative" />
+            <img src={AboutNew} className="z-10 relative" />
           </div>
 
           <div className="pl-20 pt-16 relative sm:hidden">

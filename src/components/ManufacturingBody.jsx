@@ -30,12 +30,6 @@ const ManufacturingBody = () => {
           <div>
             <img src={InfrastructureImg3} className="sm:w-[340px]"/>
           </div>
-          <div className="pl-12 sm:pl-0 sm:pt-4">
-            <img src={InfrastructureImg4} className="sm:w-[340px]"/>
-          </div>
-          <div className="pl-12 sm:pl-0 sm:pt-4">
-            <img src={InfrastructureImg5} className="sm:w-[340px]"/>
-          </div>
         </div>
       </div>
     </>

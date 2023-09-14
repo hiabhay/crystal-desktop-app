@@ -5,7 +5,7 @@ import Section from "./Section";
 import AwesomeSlider from "react-awesome-slider";
 import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
-import HomeSlider1 from "../assets/HomeSlider1.png";
+import SliderImg1 from "../assets/SliderImg1.png";
 import HomeSlider2 from "../assets/HomeSlider2.png";
 import HomeSlider3 from "../assets/HomeSlider3.png";
 import NavbarPhone from "./NavbarPhone";
@@ -61,7 +61,7 @@ const App = () => {
                 The Perfect Finish for Your Project
               </div>
               <div className="w-[704px] text-white text-base font-normal leading-7 pt-4 pl-16 sm:w-fit sm:pl-0 sm:text-xs sm:pr-2 sm:pt-4 text-justify">
-              We are a leading manufacturer of Fasteners and Nails (Hand driven & Collated). The strategic location within the Steel Belt of India make it convenient for us to access the world's finest quality steel. We specialize in production of premium stainless steel, carbon steel and high tensile galvanized standard fasteners.
+              We are a leading manufacturer of Fasteners and Nails (Bulk & Collated). The strategic location within the Steel Belt of India make it convenient for us to access the world's finest quality steel. We specialize in production of premium stainless steel, carbon steel and high tensile galvanized standard fasteners.
               </div>
               <div className="flex pt-6 pl-16 sm:pl-0">
                 <button class="rounded-full bg-amber-300 p-2 text-slate-800 text-sm font-semibold leading-normal hover:bg-white pl-4 pr-4">
@@ -88,7 +88,7 @@ const App = () => {
         fillParent={true}
         buttons={false}
       >
-        <div data-src={HomeSlider1} />
+        <div data-src={SliderImg1} />
         <div data-src={HomeSlider2} />
         <div data-src={HomeSlider3} />
       </AutoplaySlider>
