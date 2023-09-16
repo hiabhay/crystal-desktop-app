@@ -29,7 +29,7 @@ const Standards = () => {
               <div className="w-[86px] sm:w-[43px] h-1 bg-amber-300 rounded-[32px] mt-11 ml-4 sm:mt-0 sm:ml-0" />
             </div>
             <div className="w-[567px] sm:w-fit sm:text-xs sm:pr-2 sm:pt-4 text-stone-500 text-base font-light leading-7 mt-10 sm:mt-0 sm:mr-8 text-justify mr-8">
-              We are an ISO 9001:2008 certified company, and we are committed to
+              We are an ISO 9001:2015 certified company, and we are committed to
               continuous improvement. We invest in new technology and equipment
               to ensure that we are always at the forefront of the industry.
             </div>

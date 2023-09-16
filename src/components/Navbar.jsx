@@ -6,6 +6,8 @@ import insta from "../assets/Insta.svg";
 import home from "../assets/home.svg";
 import mail from "../assets/mail.svg";
 import crystal from "../assets/Crystal.svg";
+import CrystalLogoImg from '../assets/CrystalLogoImg.png'
+import CrystalLogoName from '../assets/CrystalLogoName.png'
 import { Link, useLocation } from "react-router-dom";
 import Section from "./Section";
 
@@ -81,9 +83,13 @@ const Navbar = () => {
 
         {/* lower section of navbar including buttons and logo */}
 
-        <div className="flex">
+        <div className="flex pb-2">
           <Link to="/" className="sm:left-0">
-            <img src={crystal} className="pl-10" alt="Logo" />
+            {/* <img src={crystal} className="pl-10" alt="Logo" /> */}
+            <div className="flex">
+            <img src={CrystalLogoImg} className="pl-12"></img>
+            <img src={CrystalLogoName} className="w-[94px] h-[30px] mt-3 ml-3 "></img>
+            </div>
           </Link>
           <div className="text-white flex pt-0flex flex-grow justify-end pr-12 pt-0 sm:flex-col">
             <button>

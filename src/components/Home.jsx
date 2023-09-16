@@ -16,12 +16,11 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 }
 
 const App = () => {
-
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -41,6 +40,12 @@ const App = () => {
     };
   }, []);
 
+  const handleButtonClick = () => {
+    const url =
+      "https://drive.google.com/file/d/1wuotHsbMNk6dYpUO8Cx3aBDDEqoNXcvc/view?usp=sharing";
+    window.open(url, "_blank");
+  };
+
   return (
     <>
       <div
@@ -51,9 +56,7 @@ const App = () => {
         }}
         className=""
       >
-        <div>
-          {isMobile ? <NavbarPhone /> : <Navbar />}
-        </div>
+        <div>{isMobile ? <NavbarPhone /> : <Navbar />}</div>
         <main>
           <div className="max-w-screen-xl mx-auto sm:mx-1 px-4">
             <Section>
@@ -61,18 +64,29 @@ const App = () => {
                 The Perfect Finish for Your Project
               </div>
               <div className="w-[704px] text-white text-base font-normal leading-7 pt-4 pl-16 sm:w-fit sm:pl-0 sm:text-xs sm:pr-2 sm:pt-4 text-justify">
-              We are a leading manufacturer of Fasteners and Nails (Bulk & Collated). The strategic location within the Steel Belt of India make it convenient for us to access the world's finest quality steel. We specialize in production of premium stainless steel, carbon steel and high tensile galvanized standard fasteners.
+                We are a leading manufacturer of Fasteners and Nails (Bulk &
+                Collated). The strategic location within the Steel Belt of India
+                make it convenient for us to access the world's finest quality
+                steel. We specialize in production of premium stainless steel,
+                carbon steel and high tensile galvanized standard fasteners.
               </div>
               <div className="flex pt-6 pl-16 sm:pl-0">
-                <button class="rounded-full bg-amber-300 p-2 text-slate-800 text-sm font-semibold leading-normal hover:bg-white pl-4 pr-4">
+                <button
+                  className="rounded-full bg-amber-300 p-2 text-slate-800 text-sm font-semibold leading-normal hover:bg-white pl-4 pr-4"
+                  onClick={handleButtonClick}
+                >
                   OUR CATALOGUE
                 </button>
+
                 <div
                   style={{ margin: "0 0.5rem" }}
                   className="pl-2 sm:pl-0"
                 ></div>
-                <button class="rounded-full bg-transparent p-2 text-white text-sm font-semibold leading-normal border hover:bg-zinc-100 hover:text-black pl-4 pr-4" onClick={scrollToTop}>
-                <Link to='/about'>MORE ABOUT US</Link>
+                <button
+                  class="rounded-full bg-transparent p-2 text-white text-sm font-semibold leading-normal border hover:bg-zinc-100 hover:text-black pl-4 pr-4"
+                  onClick={scrollToTop}
+                >
+                  <Link to="/about">MORE ABOUT US</Link>
                 </button>
               </div>
             </Section>

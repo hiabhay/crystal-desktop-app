@@ -3,6 +3,8 @@ import crystal from "../assets/Crystal.svg";
 import InstaWhite from "../assets/InstaWhite.svg";
 import LinkedInWhite from "../assets/LinkedInWhite.svg";
 import FacebookWhite from "../assets/FacebookWhite.svg";
+import CrystalLogoImg from '../assets/CrystalLogoImg.png'
+import CrystalLogoName from '../assets/CrystalLogoName.png'
 import { Link } from "react-router-dom";
 
 function scrollToTop() {
@@ -18,7 +20,10 @@ const Footer = () => {
       <div className="bg-gray-800 flex pb-28 justify-center items-center sm:flex-col md:flex-col">
         <div className="flex sm:flex-col md:flex-col">
           <div className="pt-8 pl-8 sm:flex-col sm:pl-6 md:pl-0">
-            <img src={crystal} className="sm:w-[1/2]" />
+          <div className="sm:flex lg:flex-col md:flex-col">
+            <img src={CrystalLogoImg}></img>
+            <img src={CrystalLogoName} className="w-[94px] h-[30px] mt-3 sm:ml-3 "></img>
+            </div>
             <div className="w-[364px] sm:w-[300px] text-zinc-500 text-sm font-normal leading-[21px] tracking-tight pt-4 sm:pr-8">
               Bring to the table win-win survival strategies to ensure proactive
               domination. At the end of the day, going forward, a new normal
